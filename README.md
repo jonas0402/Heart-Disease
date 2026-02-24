@@ -1,45 +1,52 @@
-#test change here
-#second test here
+# Heart Disease Prediction
 
-# Heart-Desease
-Heart Desease Dataset from Kaggle.com https://www.kaggle.com/ronitf/heart-disease-uci
+Machine learning classification project using the UCI Heart Disease dataset from Kaggle to predict the presence of heart disease.
 
-Context
-This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them. In particular, the Cleveland database is the only one that has been used by ML researchers to
-this date. The "goal" field refers to the presence of heart disease in the patient. It is integer valued from 0 (no presence) to 4.
+## Overview
 
-Content
+This project applies various ML classification algorithms to the Cleveland Heart Disease dataset (14 features, 303 samples) to predict whether a patient has heart disease.
 
-Attribute Information:
+## Dataset
 
-age
-sex
-chest pain type (4 values)
-resting blood pressure
-serum cholestoral in mg/dl
-fasting blood sugar > 120 mg/dl
-resting electrocardiographic results (values 0,1,2)
-maximum heart rate achieved
-exercise induced angina
-oldpeak = ST depression induced by exercise relative to rest
-the slope of the peak exercise ST segment
-number of major vessels (0-3) colored by flourosopy
-thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
-The names and social security numbers of the patients were recently removed from the database, replaced with dummy values. One file has been "processed", that one containing the Cleveland database. All four unprocessed files also exist in this directory.
+**Source:** [UCI Heart Disease - Kaggle](https://www.kaggle.com/ronitf/heart-disease-uci)
 
-To see Test Costs (donated by Peter Turney), please see the folder "Costs"
+### Features
 
-Acknowledgements
-Creators:
+| Feature | Description |
+|---------|-------------|
+| age | Age in years |
+| sex | Sex (1 = male, 0 = female) |
+| cp | Chest pain type (4 values) |
+| trestbps | Resting blood pressure (mm Hg) |
+| chol | Serum cholesterol (mg/dl) |
+| fbs | Fasting blood sugar > 120 mg/dl |
+| restecg | Resting ECG results (0, 1, 2) |
+| thalach | Maximum heart rate achieved |
+| exang | Exercise-induced angina |
+| oldpeak | ST depression induced by exercise |
+| slope | Slope of peak exercise ST segment |
+| ca | Number of major vessels (0-3) colored by fluoroscopy |
+| thal | Thalassemia (3=normal, 6=fixed defect, 7=reversible defect) |
 
-Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
-University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
-University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
-V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
-Donor:
-David W. Aha (aha '@' ics.uci.edu) (714) 856-8779
+## Tech Stack
 
-Inspiration
-Experiments with the Cleveland database have concentrated on simply attempting to distinguish presence (values 1,2,3,4) from absence (value 0).
+- **Language:** Python (Jupyter Notebook)
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
-See if you can find any other trends in heart data to predict certain cardiovascular events or find any clear indications of heart health.
+## Getting Started
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+jupyter notebook
+```
+
+## Acknowledgements
+
+- Hungarian Institute of Cardiology, Budapest: Andras Janosi, M.D.
+- University Hospital, Zurich: William Steinbrunn, M.D.
+- University Hospital, Basel: Matthias Pfisterer, M.D.
+- V.A. Medical Center, Long Beach & Cleveland Clinic: Robert Detrano, M.D., Ph.D.
+
+## Author
+
+**Jonas** - Data Engineer | St. Louis, MO
